@@ -75,7 +75,7 @@ const experiences: readonly Experience[] = [
     ],
   },
   {
-    period: "August 2020 - Present",
+    period: "August 2020 - Summer 2024",
     title: "Center Store Associate",
     organization: "Family Fare (SpartanNash), Auburn, NE",
     bullets: [
