@@ -9,6 +9,15 @@ const navLinks = [
 const researchArticleUrl =
   "https://newsroom.unl.edu/announce/cse/20226/107573";
 
+type Experience = {
+  period: string;
+  title: string;
+  organization: string;
+  bullets: readonly string[];
+  linkLabel?: string;
+  linkHref?: string;
+};
+
 const skillGroups = [
   {
     title: "Technical Skills",
@@ -85,7 +94,7 @@ const experiences = [
       "Helped create a supportive environment to enhance children's self-esteem and coping skills.",
     ],
   },
-] as const;
+] as const satisfies readonly Experience[];
 
 function SectionHeading({
   eyebrow,
