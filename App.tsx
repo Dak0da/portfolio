@@ -44,7 +44,7 @@ const skillGroups = [
   },
 ] as const;
 
-const experiences = [
+const experiences: readonly Experience[] = [
   {
     period: "Summer 2025 - Present",
     title: "UCARE Researcher",
@@ -94,7 +94,7 @@ const experiences = [
       "Helped create a supportive environment to enhance children's self-esteem and coping skills.",
     ],
   },
-] as const satisfies readonly Experience[];
+];
 
 function SectionHeading({
   eyebrow,
